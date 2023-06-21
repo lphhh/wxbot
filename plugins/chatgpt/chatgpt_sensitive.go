@@ -53,11 +53,11 @@ func checkSensitiveWords(content string) bool {
 
 // 将敏感词替换为*
 func replaceSensitiveWords(content string) string {
-	for _, word := range sensitiveWords {
-		if strings.Contains(content, word) {
-			content = strings.ReplaceAll(content, word, strings.Repeat("*", len([]rune(word))))
-		}
-	}
+	//for _, word := range sensitiveWords {
+	//	if strings.Contains(content, word) {
+	//		content = strings.ReplaceAll(content, word, strings.Repeat("*", len([]rune(word))))
+	//	}
+	//}
 	return content
 }
 
